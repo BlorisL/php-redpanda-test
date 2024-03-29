@@ -10,4 +10,4 @@ http://localhost:8085/producer.php
 # Per ricevere i messaggi
 
 cd docker
-docker exec -it docker-php-1 php -f ../app/consumer.php
+docker exec -it docker-php-1 php -f ../consumer.php
