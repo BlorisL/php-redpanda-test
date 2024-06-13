@@ -14,7 +14,7 @@ $topic = $producer->newTopic("chat-room");
     $topic->produce(RD_KAFKA_PARTITION_UA, 0, "Message $i");
     $producer->poll(0);
 }*/
-$message = "ciao a tutti!";
+$message = "Hello World!";
 $topic->produce(RD_KAFKA_PARTITION_UA, 0, $message);
 $producer->poll(0);
 
@@ -29,5 +29,5 @@ if (RD_KAFKA_RESP_ERR_NO_ERROR !== $result) {
     throw new \RuntimeException('Was unable to flush, messages might be lost!');
 }
 
-echo "Messaggio inviati con successo: {$message}\n";
+echo "Message sends successfully: {$message}\n";
 ?>
