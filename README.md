@@ -11,3 +11,5 @@ http://localhost:8085/producer.php
 
 cd docker
 docker exec -it docker-php-1 php -f ../consumer.php
+
+[Share with me a cup of tea](https://www.buymeacoffee.com/bloris) ☕
